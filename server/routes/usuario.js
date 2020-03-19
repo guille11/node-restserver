@@ -9,7 +9,7 @@ const { verificaToken, verificaAdminRole } = require('../middlewares/autenticaci
 const app = express();
 
 
-app.get('/usuario', /*verificaToken,*/ (req, res) => {
+app.get('/usuario', verificaToken, (req, res) => {
 
     /*return res.json({
         usuario: req.usuario,
@@ -46,7 +46,7 @@ app.get('/usuario', /*verificaToken,*/ (req, res) => {
         });
 });
 
-app.post('/usuario', [verificaToken, verificaAdminRole], function(req, res) {
+app.post('/usuario', [ /*verificaToken,*/ verificaAdminRole], function(req, res) {
 
     let body = req.body;
 
