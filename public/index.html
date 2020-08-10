@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <!--<img src="http://localhost:3000/imagen/usuarios/5e55a37a8d89b615585fe59e-769.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiZXN0YWRvIjp0cnVlLCJnb29nbGUiOmZhbHNlLCJfaWQiOiI1ZTU1YTM3YThkODliNjE1NTg1ZmU1OWUiLCJub21icmUiOiJHdWlsbGVybW8gUmV5ZXMiLCJlbWFpbCI6InRlc3QxQGdtYWlsLmNvbSIsIl9fdiI6MCwiaW1nIjoiNWU1NWEzN2E4ZDg5YjYxNTU4NWZlNTllLTc2OS5wbmcifSwiaWF0IjoxNTk3MDgwNzE4LCJleHAiOjE1OTcyNTM1MTh9.Z8_bkUJJjjNLfSIn1XEIP890zSi7EDDWKCHPKqfml8U" alt=""> -->
+
+
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
 
     <a href="#" onclick="signOut();">Sign out</a>
@@ -35,7 +38,7 @@
 
             var id_token = googleUser.getAuthResponse().id_token;
 
-            console.log(id_token);
+            //console.log(id_token);
 
             var xhr = new XMLHttpRequest();
             xhr.open('POST', '/google');
